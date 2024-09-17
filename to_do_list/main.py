@@ -20,7 +20,7 @@ def to_do_list():
                 remove = remove_task()
                 list = remove_task_to_list(list, remove)
             case 4:
-                print("Lista reiniciada")
+                print("Restarted list")
                 list = reset_list()
             case 5: 
                 thanks()

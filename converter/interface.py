@@ -1,32 +1,32 @@
 def welcome():
-    print("Bem vindo(a) ao conversor Real/Dollar")
+    print("Welcome to converter Real/Dollar")
 
 def thanks():
-    print("Obrigado por utilizar o nosso conversor de valores")
+    print("Thank you for using our value converter")
 
 def return_cot():
-    cot = float(input("Digite a cotação atual do Dollar: "))
+    cot = float(input("Enter the current Dollar rate: "))
     return cot
 
 def option_convert():
-    print("""==== Conversão ====
-1- Dollar para Real
-2- Real para Dollar""")
-    convert= int(input("Conversão (1 ou 2): "))
+    print("""==== Conversion ====
+1- Dollar to Real
+2- Real to Dollar""")
+    convert= int(input("Conversion (1 or 2):"))
     return convert
 
 def select_value():
-    value = float(input("Digite o valor: "))
+    value = float(input("Enter the amount: "))
     return value
 
 def select_menu():
     menu = int(input("""
-=== MENU CONVERSOR ===
-1- Converter outro valor
-2- Alterar o tipo de conversão
-3- Finalizar o programa                    
+=== MENU CONVERTER ===
+1- Convert another value
+2- Change the type of conversion
+3- Finish the program                    
 
-Selecione uma opção do menu: """))
+Select an option from the menu: """))
     return menu
 
 if __name__ == "__main__":

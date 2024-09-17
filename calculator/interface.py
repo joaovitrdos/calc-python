@@ -1,33 +1,33 @@
 def welcome ():
-    print("""Bem vindo(a) calculadora""")
+    print("""Welcome to Calculator""")
 
 def thanks():
-    print("Obrigado por utilizar a nossa calculadora !")
+    print("Thank you for using our calculator!")
 
 def value1():
-    value1 = float(input("Digite o primeiro valor: "))
+    value1 = float(input("Enter the first value: "))
     return value1
 
 def value2():
-    value2 = float(input("Digite o segundo valor: "))
+    value2 = float(input("Enter the second value: "))
     return value2
 
 def operator ():
-    option = (input("""==== Operação ====
-Adição: +
-Subtração: -
-Multiplicação: X
-Divisão: /   
+    option = (input("""==== Operation ====
+Addition: +
+Subtraction:-
+Multiplication: X
+Division:/ 
 
-Escolha o sua operacação:                                                                                                                     
+    Choose your operation:                                                                                                                 
 """))
     return option
 
 def menu ():
-    select_menu = int(input("""=== MENU CALCULADORA === 
-1- Fazer outra conta
-2- Alterar a operação
-3- Finalizar programa
+    select_menu = int(input("""=== MENU CALCULATOR === 
+1- Make another account
+2- Change the operation
+3- End program
 """))
     return select_menu
 

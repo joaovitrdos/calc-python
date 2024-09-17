@@ -1,31 +1,31 @@
 def welcome():
-    print("Bem vindo(a) a lista de tarefas")
+    print("Welcome to the to-do list")
 
 def thanks():
-    print("obrigado por utilizar o nosso sistema de lista de tarefas !")
+    print("Thank you for using our to-do list system!")
 
 def select_menu():
     option_menu = int(input("""=== MENU ===
-1- Adicionar tarefa                            
-2- Mostrar lista
-3- Retirar tarefa
-4- Reiniciar lista                            
-5- Finalizar programa
-Selecione: """))
+1- Add task                            
+2- Show list
+3- Withdraw task
+4- Reset list                            
+5- Finalize program
+Select: """))
     return option_menu
 
 def add_task ():
-    task = str(input("Digite a tarefa que deseja adicioanar a sua lista: "))
+    task = str(input("Enter the task you want to add to your list: "))
     return task
 
 def show_list(list):
-    print("--- LISTA ---")
+    print("--- LIST ---")
     if list == []:
-        print ('Você não adicionou item a sua lista !!!')
+        print ('You didnt add an item to your LIST !!!')
     else:
         for i in range (len(list)):
             print(f"{i+1}- {list[i]}")
 
 def remove_task():
-    remove = int(input("Digite o número da tarefa que deseja retirar: "))
+    remove = int(input("Enter the number of the task you want to withdraw: "))
     return remove

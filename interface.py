@@ -1,16 +1,16 @@
 def welcome():
-    print("Bem vindo ao Sistema de Programas")
+    print("Welcome to program Systems")
 
 def menu ():
-    menu_option = int(input("""=== MENU PRINCIPAL ===
-1- Calculadora
-2- Conversor Dollar/Real
-3- Jogo do número secreto
-4- Lista de tarefas
-5- Finalizar programa geral
+    menu_option = int(input("""=== MAIN MENU ===
+1- Calculator
+2- Dollar/Real Converter
+3- Secret number game
+4- To-do list
+5- Finalize general program
                              
-Selecione um programa: """))
+Select a program: """))
     return menu_option
 
 def thanks():
-    print("Obrigado por utilizar os nossos programas !")
+    print("Thank you for using our programs !")

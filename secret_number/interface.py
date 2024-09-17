@@ -1,31 +1,31 @@
 def welcome():
-    print("=== Bem vindo(a) ao jogo do número secreto ===\n")
+    print("=== Welcome to the secret number game ===")
 
 def thanks():
-    print("obrigado por utilizar o nosso jogo do número secreto !")
+    print("Thank you for using our secret number game !")
 
 def introduction():
-    print("Neste jogo o computador vai gerar um número aleatório entre 0 e 100. Você tem que adivinhar qual valor foi gerado:")
+    print("In this game the computer will generate a random number between 0 and 100. You have to guess what value was generated:")
 
 def first_attempt ():
-    attempt = int(input("Dê o seu primeiro chute: "))
+    attempt = int(input("Take your first kick: "))
     return attempt
 
 def number_bigger():
-    attempt = int(input("""O seu chute foi alto. Tente novamente
-Digite outro valor: """))
+    attempt = int(input("""His shot was high. Try again
+Enter another value: """))
     return attempt
 
 def number_small():
-    attempt = int(input("""O seu chute foi baixo. Tente novamente
-Digite outro valor: """))
+    attempt = int(input("""His shot was low. Try again
+Enter another value: """))
     return attempt
 
 def congratulations(number, attempts):
-    print (f"Parabéns, você acertou o número {number} em {attempts} tentativas")
+    print (f"Congratulations, you got the number {number} right in {attempts} attempts")
 
 def play_again ():
-    again = str(input("Deseja jogar novamente ? (s/n)")).upper()
+    again = str(input("Want to play again ? (s/n)")).upper()
     match again:
         case 'S':
             return True
